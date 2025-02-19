@@ -14,13 +14,13 @@ import a_avatar3 from "./assets/Images/icon/a_avatar03.png";
 import a_avatar2 from "./assets/Images/icon/a_avatar02.png";
 import a_avatar1 from "./assets/Images/icon/a_avatar01.png";
 import a_avatar9 from "./assets/Images/icon/a_avatar09.png";
-import b_plan from "./assets/Images/icon/plan.png";
 import a_hub from "./assets/Images/icon/hub.png";
+import m_check from "./assets/Images/icon/check.png";
 
 const Maincontent = () => {
   return (
     <div>
-      <main className=" ">
+      <main className="px-16 ">
         <div className="md:max-w-7xl mx-auto bg-white">
           <h1 className="text-[30px] font-bold text-center pt-32">
             Innovative Solutions for a Brighter Future
@@ -104,6 +104,7 @@ const Maincontent = () => {
                 What Our Clients Say About SoftenBD
               </h1>
             </div>
+
             <div className="flex flex-row justify-between mx-20 gap-10 mt-16 ">
               <div className>
                 <img src={a_avatar8} alt className="h-16 w-16" />
@@ -142,6 +143,7 @@ const Maincontent = () => {
               </p>
             </div>
           </div>
+          {/* Flexible Pricing Plans */}
           <div className="mt-32">
             <div className="text-center mx-auto">
               <h1 className="text-[30px] font-bold">Flexible Pricing Plans</h1>
@@ -149,8 +151,228 @@ const Maincontent = () => {
                 Choose a package that fits your needs and budget.
               </p>
             </div>
-            <div className="mx-auto mt-16">
-              <img src={b_plan} alt className="mx-auto" />
+            <div className="mx-16 mt-16 flex justify-between">
+              {/* Basic Package */}
+              <div className="rounded-[12px] border-1 border-solid border-[#B3B3B3] p-4 w-[250px] h-[403px] ">
+                <div className="border-b border-solid border-[#B3B3B3]">
+                  <h2 className="text-[#16A249] text-[18px] font-bold">
+                    Basic Package
+                  </h2>
+                  <p className="text-[30px] text-black font-bold py-2 ">
+                    Free Forever
+                  </p>
+                  <p className="text-[16px] font-normal pb-3">
+                    For personal use only.
+                  </p>
+                </div>
+                <div className="py-5">
+                  <div className="gap-2 flex">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Basic Support
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Community Access
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Limited Storage
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Basic Analytics
+                    </p>
+                  </div>
+                  <button className="rounded-[12px] font-semibold py-[10px] px-10  border border-[#B3B3B3] mt-4">
+                    Get Started Now
+                  </button>
+                </div>
+              </div>
+              {/* Pro package */}
+              <div className="w-[250px] h-[471px] rounded-[12px] border-1 border-solid border-[#B3B3B3] p-4">
+                <div className="border-b border-solid border-[#B3B3B3]">
+                  <div className="">
+                    <h2 className="text-[#2463EB] text-[18px] font-bold">
+                      Pro Package
+                    </h2>
+                    <div className="flex gap-2 pt-3">
+                      <h2 className="text-[30px] font-bold">$8</h2>
+                      <p className="text-base text-[#0D0D0DB2] font-normal py-2">
+                        $29.99 per month
+                      </p>
+                    </div>
+                    <p className="text-base text-[#0D0D0DB2] font-medium py-3">
+                      Perfect for freelancers and small teams.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="py-4">
+                  <div className="gap-2 flex">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Priority Support
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Extended Storage
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Advanced Analytics
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Custom Solutions
+                    </p>
+                  </div>
+                  <div className="gap-2 flex py-4">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Monthly Reports
+                    </p>
+                  </div>
+                  <button className=" bg-[#2463EB] rounded-[12px] font-semibold py-[10px] text-white px-10 ">
+                    Join the Pro Plan
+                  </button>
+                </div>
+              </div>
+              {/* Team Package */}
+              <div className="w-[250px] h-[563px] rounded-[12px] border-1 border-solid border-[#B3B3B3] p-4">
+                <div className="border-b border-solid border-[#B3B3B3]">
+                  <h2 className="text-[#2463EB] text-[18px] font-bold">
+                    Team Package
+                  </h2>
+                  <div className="flex gap-2 pt-3">
+                    <h2 className="text-[30px] font-bold">$12</h2>
+                    <p className="text-base text-[#0D0D0DB2] font-normal py-2">
+                      $99.99 per month
+                    </p>
+                  </div>
+                  <p className="text-base text-[#0D0D0DB2] font-medium py-3">
+                    Designed for collaborative teams.
+                  </p>
+                </div>
+                <div className="py-5">
+                  <div className="gap-2 flex">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Team Collaboration
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Unlimited Projects
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Dedicated Account Manager
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Custom Integrations
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Real-Time Collaboration
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Team Analytics
+                    </p>
+                  </div>
+                  <button className=" bg-[#2463EB] rounded-[12px] font-semibold py-[10px] text-white px-5 mt-4">
+                    Start Your Team Plan
+                  </button>
+                </div>
+              </div>
+              {/* Enterprise Package */}
+              <div className="w-[250px] h-[583] rounded-[12px] border-1 border-solid border-[#B3B3B3] p-4">
+                <div className="border-b border-solid border-[#B3B3B3]">
+                  <h2 className="text-[#2463EB] text-[18px] font-bold">
+                    Enterprise Package
+                  </h2>
+                  <div className="flex gap-2 pt-3">
+                    <h2 className="text-[30px] font-bold">$24</h2>
+                    <p className="text-base text-[#0D0D0DB2] font-normal py-2">
+                      Contact for Pricing
+                    </p>
+                  </div>
+
+                  <p className="text-base text-[#0D0D0DB2] font-medium py-3">
+                    Tailored for large organizations.
+                  </p>
+                </div>
+                <div className="py-5">
+                  <div className="gap-2 flex">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Custom Solutions
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Enhanced Security
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      On-Premise Deployment
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Dedicated Support
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Advanced Analytics
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Scalable Infrastructure
+                    </p>
+                  </div>
+                  <div className="gap-2 flex pt-5">
+                    <img src={m_check} alt="" className="" />
+                    <p className="text-[16px] text-base font-semibold">
+                      Custom Training
+                    </p>
+                  </div>
+                  <button className="rounded-[12px] font-semibold py-[10px] px-5  border border-[#B3B3B3] mt-4">
+                    Inquire for Enterprise
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <div className="mt-32">
