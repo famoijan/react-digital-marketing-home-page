@@ -3,7 +3,7 @@ import Header from "./Header";
 
 const App = () => {
   return (
-    <div className="bg-amber-200">
+    <div className="">
       <Header />
     </div>
   );

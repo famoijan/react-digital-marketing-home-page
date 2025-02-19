@@ -82,7 +82,7 @@ const Maincontent = () => {
                 Maximizing your brand's reach and engagement through strategic
                 social media campaigns and analytics.
               </p>
-              <h2 className="text-[#2463EB] text-[18px] leading-7 font-bold p-5">
+              <h2 className="text-[#2463EB] text-[18px] leading-7 .font-bold p-5">
                 Boost Your Presence
               </h2>
             </div>
