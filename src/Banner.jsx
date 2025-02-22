@@ -17,6 +17,14 @@ const Banner = () => {
             and IT solutions tailored to your needs.
           </h2>
         </div>
+        <div className="flex mt-24 gap-10 mr-[50px] float-right">
+          <button className="bg-[#4CC277] rounded-[62.5px] px-6 py-2 text-[8.69px] text-white ">
+            Get Started Today
+          </button>
+          <button className="bg-black border border-white rounded-[62.5px] px-6 py-2 text-[8.69px] text-white">
+            Learn More About Us
+          </button>
+        </div>
       </div>
     </div>
   );

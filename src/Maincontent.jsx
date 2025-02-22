@@ -1,7 +1,6 @@
 import React from "react";
-import partner from "./assets/Images/icon/partner.png";
+
 import m_image from "./assets/Images/icon/m_image.png";
-import container from "./assets/Images/icon/Container.png";
 import i_logo01 from "./assets/Images/icon/i_logo01.png";
 import i_logo02 from "./assets/Images/icon/i_logo02.png";
 import i_logo03 from "./assets/Images/icon/i_logo03.png";
@@ -16,17 +15,45 @@ import a_avatar1 from "./assets/Images/icon/a_avatar01.png";
 import a_avatar9 from "./assets/Images/icon/a_avatar09.png";
 import a_hub from "./assets/Images/icon/hub.png";
 import m_check from "./assets/Images/icon/check.png";
+import gpay from "./assets/Images/icon/Logo-gpay.png";
+import pay from "./assets/Images/icon/Logo-pay.png";
+import paypal from "./assets/Images/icon/Logo-paypal.png";
+import stripe from "./assets/Images/icon/Logo-stripe.png";
+import visa from "./assets/Images/icon/Logo-visa.png";
+import bitpay from "./assets/Images/icon/Logo-bitpay.png";
 
 const Maincontent = () => {
   return (
     <div>
       <main className="px-16 ">
         <div className="md:max-w-7xl mx-auto bg-white">
-          <h1 className="text-[30px] font-bold text-center pt-32">
-            Innovative Solutions for a Brighter Future
-          </h1>
-          <img src={partner} alt className="mx-auto pt-16 pb-32" />
-          <div className="flex justify-center mx-auto gap-10 p-10">
+          <div className="">
+            <h1 className="text-[30px] font-bold text-center pt-32">
+              Innovative Solutions for a Brighter Future
+            </h1>
+            {/* <img src={partner} alt className="mx-auto pt-16 pb-32" /> */}
+            <div className="flex justify-between pt-16 pb-32 mx-24">
+              <div className="">
+                <img src={visa} alt="" className="" />
+              </div>
+              <div className="">
+                <img src={gpay} alt="" className="" />
+              </div>
+              <div className="">
+                <img src={pay} alt="" className="" />
+              </div>
+              <div className="">
+                <img src={paypal} alt="" className="" />
+              </div>
+              <div className="">
+                <img src={stripe} alt="" className="" />
+              </div>
+              <div className="">
+                <img src={bitpay} alt="" className="" />
+              </div>
+            </div>
+          </div>
+          <div className=" max-w-7xl mx-auto flex justify-center  gap-5">
             <div className>
               <img
                 src={m_image}
@@ -34,14 +61,31 @@ const Maincontent = () => {
                 className="object-contain md:object-cover"
               />
             </div>
-            <div className=" mt-32">
-              <img
-                src={container}
-                alt
-                className="object-contain md:object-cover"
-              />
+            <div className=" my-16 mx-16 w-[504px] h-[328px] md:w-[484px]">
+              <span className="text-[18px] px-[12px] py-[6px] font-semibold rounded-[12px] border border-[#B3B3B3] mr-[92]">
+                Innovative Solutions for a Brighter Tomorrow
+              </span>
+              <div className="pt-8 mr-[18px]">
+                <span className="text-[30px] font-bold">
+                  Harnessing Blue Light and Green Technology for Your Success
+                </span>
+                <p className="pt-4 text-[18px]">
+                  At SoftenBD, we specialize in web and Android development,
+                  social marketing, video editing, and a variety of IT solutions
+                  tailored to meet your needs.
+                </p>
+              </div>
+              <div className="flex gap-4 mt-8">
+                <span className="rounded-[12px] border border-[#B3B3B3] text-[#0D0D0DB2] text-[16px] font-mono pr-3 ">
+                  Join Us for Cutting-Edge Solutions
+                </span>
+                <button className="text-white text-[18px] rounded-xl bg-[#2463EB] px-2 py-[2px] w-[191px]">
+                  Get Started Today
+                </button>
+              </div>
             </div>
           </div>
+          {/*  */}
           <div className="text-center pt-32">
             <h1 className="text-[#4D4D4D] text-[18px] font-semibold">
               Innovative IT Solutions
@@ -82,7 +126,7 @@ const Maincontent = () => {
                 Maximizing your brand's reach and engagement through strategic
                 social media campaigns and analytics.
               </p>
-              <h2 className="text-[#2463EB] text-[18px] leading-7 .font-bold p-5">
+              <h2 className="text-[#2463EB] text-[18px] leading-7 font-bold p-5">
                 Boost Your Presence
               </h2>
             </div>
